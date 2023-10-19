@@ -1,0 +1,54 @@
+.content-image {
+	display: none;
+}
+
+.content-image--active {
+	display: inline;
+}
+
+
+/* Переключение фона */
+
+.header:has(.header__banner-image.color-green.content-image--active) {
+	background: linear-gradient(180deg, var(--greenColor) 0%, rgba(235, 235, 235, 0) 100%);
+}
+
+.header:has(.header__banner-image.color-pink.content-image--active) {
+	background: linear-gradient(180deg, var(--pinkColor) 0%, rgba(235, 235, 235, 0) 100%);
+}
+
+.header:has(.header__banner-image.color-silver.content-image--active) {
+	background: linear-gradient(180deg, var(--silverColor) 0%, rgba(235, 235, 235, 0) 100%);
+}
+
+.header:has(.header__banner-image.color-blue.content-image--active) {
+	background: linear-gradient(180deg, var(--skyBlueColor) 0%, rgba(235, 235, 235, 0) 100%);
+}
+
+.header:has(.header__banner-image.color-gray.content-image--active) {
+	background: linear-gradient(180deg, var(--spaceGrayColor) 0%, rgba(235, 235, 235, 0) 100%);
+}
+
+
+
+/* Переключение blur у букв "MAX" */
+
+.header:has(.header__banner-image.color-green.content-image--active) .header__title-part--m::after {
+	background: var(--greenColor);
+}
+
+.header:has(.header__banner-image.color-pink.content-image--active) .header__title-part--m::after {
+	background: var(--pinkColor);
+}
+
+.header:has(.header__banner-image.color-silver.content-image--active) .header__title-part--m::after {
+	background: var(--silverColor);
+}
+
+.header:has(.header__banner-image.color-blue.content-image--active) .header__title-part--m::after {
+	background: var(--skyBlueColor);
+}
+
+.header:has(.header__banner-image.color-gray.content-image--active) .header__title-part--m::after {
+	background: var(--spaceGrayColor);
+}

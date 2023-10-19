@@ -1,0 +1,15 @@
+:root {
+	--blackColor: #000000;
+	--blackColorTransparent: rgba(0, 0, 0, 0.4);
+	--whiteColor: #ffffff;
+	--whiteColorTransparent: rgba(255, 255, 255, 0.4);
+	
+	--grayColor: #777777;
+	--milkColor: #fafafa;
+	
+	--greenColor: #ddead9;
+	--pinkColor: #f3d6d1;
+	--silverColor: #fafafa;
+	--skyBlueColor: #cadbeb;
+	--spaceGrayColor: #b6b6b6;
+}

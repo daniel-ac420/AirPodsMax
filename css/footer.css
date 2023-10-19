@@ -1,0 +1,298 @@
+.footer {
+	padding-bottom: 40px;
+	color: var(--whiteColor);;
+	background-color: var(--blackColor);
+}
+
+.footer__top {
+	position: relative;
+	background-image: url(../images/footer/background/audio_quality_spatial_figure__clxltt2m0z2a_xlarge_2x1.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: top center;
+	height: 100vh;
+}
+
+.footer__top::after {
+    content: "";
+    position: absolute;
+    z-index: 100;
+	top: 135px;
+    left: 0;
+    right: 0;
+    background-image: url(../images/footer/background/audio_quality_spatial_rings_front__gfrdafohuzyq_xlarge_2x1.png);
+    background-repeat: no-repeat;
+	background-position: center;
+    background-size: contain;
+    height: 100vh;
+}
+
+.footer__top-content {
+	position: relative;
+	top: 45vh;
+	z-index: 1000;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 20px;
+}
+
+.footer__top-description {
+	max-width: 300px;
+}
+
+.button--footer {
+	margin-top: 20px;
+}
+
+.footer__bottom {
+	padding-top: 250px;
+}
+
+.footer__bottom-content {
+	position: relative;
+	z-index: 1000;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 20px;
+	margin-bottom: 80px;
+}
+
+.logo--footer:hover {
+	filter: brightness(0.5);
+    transform: scale(1.25);
+}
+
+.logo--footer:focus {
+	border-radius: 40px;
+	filter: brightness(1.25);
+    transform: scale(1.1);
+}
+
+.footer a:focus {
+	outline-color: var(--whiteColorTransparent);
+}
+
+.menu__list--footer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 20px;
+}
+
+.menu__item--footer:hover {
+    filter: brightness(0.75);
+    transform: scale(1.15);
+}
+
+.footer__link {
+	display: inline-block;
+	transition: all 1.25s;
+}
+
+.footer__link:hover {
+	filter: brightness(0.75);
+	transform: scale(1.15);
+}
+
+.phone {
+	border-radius: 0;
+	border-bottom: 1px solid transparent;
+}
+
+.phone:hover {
+	transform: scale(1.05);
+	border-bottom: 1px solid var(--whiteColor);
+}
+
+
+
+@media (max-width: 2560px) {
+
+	.footer__top::after {
+		top: 40px;
+		
+	}
+}
+/* ↑↑↑ 2560px ↑↑↑ */
+	
+
+@media (max-width: 1920px) {
+
+	.footer__top::after {
+		top: 135px;
+	}
+}
+/* ↑↑↑ 1920px ↑↑↑ */
+	
+
+@media (max-width: 1440px) {
+	
+	.footer__top::after {
+		top: 150px;
+	}
+}
+
+/* ↑↑↑ 1440px ↑↑↑ */
+
+
+@media (max-width: 1366px) {
+
+	.footer__top::after {
+		top: 180px;
+	}
+}
+/* ↑↑↑ 1366px ↑↑↑ */
+
+
+@media (max-width: 1280px) {
+	
+	.footer__top::after {
+		top: 190px;
+	}	
+	
+}
+/* ↑↑↑ 1280px ↑↑↑ */
+	
+	
+@media (max-width: 1024px) {
+	
+	.footer__top-content {
+		top: 40vh;
+	}
+	
+	.footer__top {
+		height: 70vh;
+	}
+
+	.footer__top::after {
+		top: -140px;
+	}
+	
+	.footer__bottom {
+		padding-top: 50px;
+	}
+
+	.footer__bottom-content {
+		margin-bottom: 40px;
+	}
+	
+}
+/* ↑↑↑ 1024px ↑↑↑ */
+
+
+
+@media (max-width: 768px) {
+	
+	.footer__top-content {
+		top: 35vh;
+	}
+
+	.footer__top::after {
+		top: -130px;
+	}
+
+	.footer__top-description {
+		max-width: 400px;
+	}
+
+}
+/* ↑↑↑ 768px ↑↑↑ */
+
+
+
+
+@media (max-width: 480px) {
+		
+	.footer__top {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	
+	.footer__top::after {
+		display: none;
+	}
+
+	.footer__top-content {
+		top: 35vh;
+		position: unset;
+		transform: translateY(-95px);
+	}
+	
+	.footer__bottom {
+		padding-top: 0;
+	}
+	
+	.footer__bottom {
+		padding-top: 0;
+		margin-top: -240px;
+	}
+	
+	.menu__navigation--footer {
+		position: relative;
+		z-index: 10;
+	}
+	
+	.menu__list--footer {
+		flex-wrap: wrap;
+	}
+	
+}
+/* ↑↑↑ 480px ↑↑↑ */
+
+
+
+@media (max-width: 430px) {
+	
+	.footer__bottom {
+		margin-top: -200px;
+	}
+	
+}
+/* ↑↑↑ 430px ↑↑↑ */
+
+
+@media (max-width: 375px) {
+	
+	.footer__top {
+		height: 100vh;
+	}
+
+	.footer__bottom {
+		margin-top: 0;
+	}
+
+	.footer__top-description {
+		order: 1;
+	}
+	
+	.footer__top-content {
+		transform: translateY(120px);
+	}
+	
+	.footer__top-description {
+		max-width: 350px;
+	}
+	
+}	
+/* ↑↑↑ 375px ↑↑↑ */
+		
+
+@media (max-width: 320px) {
+	
+	.footer__top-content {
+		transform: translateY(140px);
+	}
+
+	.footer__top-description {
+		max-width: 280px;
+	}
+
+	.footer__bottom {
+		margin-top: 100px;
+	}
+	
+}
+/* ↑↑↑ 320px ↑↑↑ */
